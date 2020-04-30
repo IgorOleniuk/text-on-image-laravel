@@ -62,6 +62,14 @@
               </div>
             </form>
           </div>
+           {{-- <form action="{{ route('image.download') }}" method="POST" enctype="multipart/form-data">
+                @csrf
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <button class="btn btn-success mt-3 changeButton">Download</button>
+                    </div>
+                </div>
+            </form>--}}
         </div>
       <hr>
     </div>

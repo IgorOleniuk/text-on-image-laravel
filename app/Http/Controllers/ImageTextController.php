@@ -63,6 +63,11 @@ class ImageTextController extends Controller
     return back()->with('img_path3', $img_path);
   }
 
+  public function getDownload() {
+      $filepath = public_path('images/').'postcard-1.jpg';
+      return Response::download($filepath);
+  }
+
 
   public function addText()
   {

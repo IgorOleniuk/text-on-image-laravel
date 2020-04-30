@@ -21,3 +21,4 @@ Route::get('image', 'ImageTextController@index')->name('image');
 Route::post('image-postcard1', 'ImageTextController@imagePostcard1')->name('image.postcard1');
 Route::post('image-postcard2', 'ImageTextController@imagePostcard2')->name('image.postcard2');
 Route::post('image-postcard3', 'ImageTextController@imagePostcard3')->name('image.postcard3');
+Route::post('download', 'ImageTextController@getDownload')->name('image.download');
