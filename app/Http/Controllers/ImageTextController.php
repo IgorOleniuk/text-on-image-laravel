@@ -33,8 +33,9 @@ class ImageTextController extends Controller
 
   public function imagePostcard2()
   {
+    $text = date('d M Y');
     $img = Image::make(file_get_contents('images/postcard-2.jpg'));
-    $img->text('ESBO TEXT', 70, 1365, function ($font) {
+    $img->text($text, 70, 1365, function ($font) {
       $font->file(public_path('fonts/ProximaNovaExCn-Regular.ttf'));
       $font->size(16);
       $font->color('#FF0000');
@@ -48,8 +49,9 @@ class ImageTextController extends Controller
 
   public function imagePostcard3()
   {
+    $text = date('d M Y');
     $img = Image::make(file_get_contents('images/postcard-3.jpg'));
-    $img->text('ESBO TEXT', 1540, 460, function ($font) {
+    $img->text($text, 1540, 460, function ($font) {
       $font->file(public_path('fonts/ProximaNovaExCn-Regular.ttf'));
       $font->size(16);
       $font->color('#FF0000');
